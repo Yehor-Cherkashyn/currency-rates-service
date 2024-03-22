@@ -1,0 +1,236 @@
+2024-03-22 19:37:26 INFO  amofintech.amofintech_test_task.AmofintechTestTaskApplication - Starting AmofintechTestTaskApplication using Java 17.0.5 with PID 16584 (C:\Users\richi\IdeaProjects\amofintech_test_task\target\classes started by richi in C:\Users\richi\IdeaProjects\amofintech_test_task)
+2024-03-22 19:37:26 INFO  amofintech.amofintech_test_task.AmofintechTestTaskApplication - The following 1 profile is active: "[PROFILE]"
+2024-03-22 19:37:26 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-22 19:37:26 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-22 19:37:27 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 19:37:27 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2024-03-22 19:37:28 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-03-22 19:37:28 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-22 19:37:28 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 19:37:28 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 19:37:28 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 19:37:28 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2174 ms
+2024-03-22 19:37:28 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 19:37:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-22 19:37:28 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-03-22 19:37:29 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 19:37:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-22 19:37:30 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) [spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) [spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) [spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) [spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) [spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at amofintech.amofintech_test_task.AmofintechTestTaskApplication.main(AmofintechTestTaskApplication.java:10) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+2024-03-22 19:37:30 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 19:37:31 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 19:37:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-22 19:37:32 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 28P01
+2024-03-22 19:37:32 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ��������: ���������� "[USERNAME]" �� ������� �������������� �� ��������� ������
+2024-03-22 19:37:32 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [��������: ���������� "[USERNAME]" �� ������� �������������� �� ��������� ������] [n/a]
+2024-03-22 19:37:32 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [��������: ���������� "[USERNAME]" �� ������� �������������� �� ��������� ������] [n/a]
+2024-03-22 19:37:32 INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 19:37:32 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-22 19:37:32 ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [��������: ���������� "[USERNAME]" �� ������� �������������� �� ��������� ������] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+	at amofintech.amofintech_test_task.AmofintechTestTaskApplication.main(AmofintechTestTaskApplication.java:10) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.0-20240321.211657-246.jar:3.3.0-SNAPSHOT]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [��������: ���������� "[USERNAME]" �� ������� �������������� �� ��������� ������] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 21 more
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [��������: ���������� "[USERNAME]" �� ������� �������������� �� ��������� ������] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.getIsolatedConnection(GenerationTargetToDatabase.java:60) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:112) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 21 more
+Caused by: org.postgresql.util.PSQLException: ��������: ���������� "[USERNAME]" �� ������� �������������� �� ��������� ������
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.getIsolatedConnection(GenerationTargetToDatabase.java:60) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:112) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 21 more
+2024-03-22 20:00:30 INFO  currencyrates.currencyratesservice.CurrencyRatesServiceApplication - Starting CurrencyRatesServiceApplication using Java 18 with PID 10000 (C:\Users\richi\IdeaProjects\currency-rates-service\target\classes started by richi in C:\Users\richi\IdeaProjects\currency-rates-service)
+2024-03-22 20:00:30 INFO  currencyrates.currencyratesservice.CurrencyRatesServiceApplication - The following 1 profile is active: "dev"
+2024-03-22 20:00:30 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-22 20:00:30 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-22 20:00:31 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 20:00:31 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2024-03-22 20:00:32 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-03-22 20:00:32 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-22 20:00:32 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 20:00:32 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 20:00:32 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 20:00:32 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1521 ms
+2024-03-22 20:00:32 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 20:00:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-22 20:00:32 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-03-22 20:00:32 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 20:00:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-22 20:00:33 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a491f9d
+2024-03-22 20:00:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-22 20:00:33 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 20:00:34 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 20:00:34 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-03-22 20:00:34 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - таблиця "currency_rates" не існує, пропускається
+2024-03-22 20:00:34 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 20:00:34 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 20:00:35 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 20:00:35 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-03-22 20:00:35 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-03-22 20:00:35 INFO  currencyrates.currencyratesservice.CurrencyRatesServiceApplication - Started CurrencyRatesServiceApplication in 4.767 seconds (process running for 6.139)
+2024-03-22 20:00:45 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-22 20:00:45 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-22 20:00:45 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-03-22 20:00:46 INFO  currencyrates.currencyratesservice.controller.CurrencyRateController - Received request to get current currency rates
+2024-03-22 20:00:46 INFO  currencyrates.currencyratesservice.service.impl.CurrencyRateServiceImpl - No currency rates found in the database for date: 2024-03-22, fetching from NBU
+2024-03-22 20:00:46 INFO  currencyrates.currencyratesservice.service.impl.NbuServiceImpl - Fetching current currency rates from NBU
+2024-03-22 20:00:46 INFO  currencyrates.currencyratesservice.service.impl.NbuServiceImpl - Making HTTP request to URL: https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json
+2024-03-22 20:00:47 INFO  currencyrates.currencyratesservice.controller.CurrencyRateController - Responding with 61 current currency rates
+2024-03-22 20:00:50 INFO  currencyrates.currencyratesservice.controller.CurrencyRateController - Received request to get currency rates on date: 2020-01-01
+2024-03-22 20:00:50 INFO  currencyrates.currencyratesservice.service.impl.CurrencyRateServiceImpl - No currency rates found in the database for date: 2020-01-01, fetching from NBU
+2024-03-22 20:00:50 INFO  currencyrates.currencyratesservice.service.impl.NbuServiceImpl - Fetching currency rates from NBU on date: 2020-01-01
+2024-03-22 20:00:50 INFO  currencyrates.currencyratesservice.service.impl.NbuServiceImpl - Making HTTP request to URL: https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json&date=20200101
+2024-03-22 20:00:50 INFO  currencyrates.currencyratesservice.controller.CurrencyRateController - Responding with 62 currency rates on date: 2020-01-01
+2024-03-22 20:00:52 INFO  currencyrates.currencyratesservice.controller.CurrencyRateController - Received request to get currency rates for currency code: usd on date: 2022-02-24
+2024-03-22 20:00:52 INFO  currencyrates.currencyratesservice.service.impl.CurrencyRateServiceImpl - Searching for currency rate in the database for currency code: usd on date: 2022-02-24
+2024-03-22 20:00:53 INFO  currencyrates.currencyratesservice.service.impl.CurrencyRateServiceImpl - No currency rate found in the database for currency code: usd on date 2022-02-24, fetching from NBU
+2024-03-22 20:00:53 INFO  currencyrates.currencyratesservice.service.impl.NbuServiceImpl - Fetching currency rates from NBU for currency code: 2022-02-24 on date: usd
+2024-03-22 20:00:53 INFO  currencyrates.currencyratesservice.service.impl.NbuServiceImpl - Making HTTP request to URL: https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json&valcode=usd&yyyyMMdd=20220224
+2024-03-22 20:00:53 INFO  currencyrates.currencyratesservice.controller.CurrencyRateController - Responding for currency rates for currency code: usd on date: 2022-02-24
+2024-03-22 20:00:54 INFO  currencyrates.currencyratesservice.controller.CurrencyRateController - Received request to delete currency rates on date: 2020-01-01
+2024-03-22 20:00:54 INFO  currencyrates.currencyratesservice.service.impl.CurrencyRateServiceImpl - Deleting all currency rates on date 2020-01-01
+2024-03-22 20:00:54 INFO  currencyrates.currencyratesservice.service.impl.CurrencyRateServiceImpl - Deleted currency rates on date: 2020-01-01
+2024-03-22 20:01:02 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 20:01:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-22 20:01:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
